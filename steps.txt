@@ -1,0 +1,30 @@
+Step 1 — Environment Setup
+Get your dev environment ready: Python, TensorFlow/Keras, OpenCV, and any supporting libraries (matplotlib, sklearn, numpy). Set up a shared repo on GitHub so all three of you can collaborate without stepping on each other.
+
+Step 2 — Data Acquisition & Exploration
+Download GTSRB from Kaggle. Before touching any models, explore the dataset — understand the class distribution, visualize samples from each class, and get a feel for how severe the imbalance actually is.
+
+Step 3 — Preprocessing Pipeline
+Build a single, reusable pipeline that handles resizing (32×32 or 64×64), normalization, and optional CLAHE. This pipeline should be applied consistently across all three models — inconsistent preprocessing is one of the most common ways comparative studies go wrong.
+
+Step 4 — Data Augmentation
+Implement augmentation specifically targeting underrepresented classes. Random rotation, zoom, horizontal flip as the proposal outlines. This should be part of the training pipeline, not a one-time preprocessing step.
+
+Step 5 — Build & Train Model 1 (Custom CNN Baseline)
+Build and train your scratch CNN first. Getting this working cleanly before touching transfer learning models will save you a lot of debugging pain later.
+
+Step 6 — Build & Train Model 2 (VGG16)
+Load pretrained VGG16, freeze the base, attach your classification head, and fine-tune on GTSRB.
+
+Step 7 — Build & Train Model 3 (ResNet50)
+Same pattern as VGG16 but with gradual layer unfreezing. This is the most complex training setup of the three.
+
+Step 8 — Evaluation & Analysis
+Run all three models against the held-out test set. Generate your confusion matrices, classification reports, and convergence curves. Then do the qualitative error analysis — which classes get confused and why.
+
+Step 9 — Write the Final Report
+Tie everything together: methodology, results, and analysis. Your strongest contribution here is the honest comparative analysis, not just reporting accuracy numbers.
+
+
+CURRENT STEP-
+just extracted data from kaggle into data folder, next thing is to start jupyter and visualize data
