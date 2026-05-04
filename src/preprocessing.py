@@ -11,7 +11,7 @@ def apply_clahe(img):
 
     lab = cv2.cvtColor(img, cv2.COLOR_RGB2LAB)
     l, a, b = cv2.split(lab)
-    clahe = cv2.createCLAHE(clipLimit=2.0, titleGridSize=(4,4))
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(4,4))
     l = clahe.apply(l)
     lab = cv2.merge([l,a,b])
     return cv2.cvtColor(lab, cv2.COLOR_LAB2RGB)

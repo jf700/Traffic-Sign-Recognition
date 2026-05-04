@@ -7,6 +7,13 @@ Download GTSRB from Kaggle. Before touching any models, explore the dataset — 
 Step 3 — Preprocessing Pipeline
 Build a single, reusable pipeline that handles resizing (32×32 or 64×64), normalization, and optional CLAHE. This pipeline should be applied consistently across all three models — inconsistent preprocessing is one of the most common ways comparative studies go wrong.
 
+
+--- CHECKPOINT ---
+39,209 training images loaded, preprocessed, and shaped correctly
+12,630 test images loaded the same way
+A reusable preprocessing.py module that handles both datasets cleanly
+
+
 Step 4 — Data Augmentation
 Implement augmentation specifically targeting underrepresented classes. Random rotation, zoom, horizontal flip as the proposal outlines. This should be part of the training pipeline, not a one-time preprocessing step.
 
@@ -27,4 +34,4 @@ Tie everything together: methodology, results, and analysis. Your strongest cont
 
 
 CURRENT STEP-
-just extracted data from kaggle into data folder, next thing is to start jupyter and visualize data
+just finished steps 2 and 3. next thing to do is start with step 4 and build the validation set
