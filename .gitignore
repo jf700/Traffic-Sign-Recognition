@@ -1,8 +1,24 @@
-venv/
-data/
-models/
+# Python
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Data
+data/
+*.csv
+*.zip
+
+# Trained model weights (note: not src/models/ which is source code)
 *.h5
 *.keras
+/models/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -17,6 +17,9 @@ A reusable preprocessing.py module that handles both datasets cleanly
 Step 4 — Data Augmentation
 Implement augmentation specifically targeting underrepresented classes. Random rotation, zoom, horizontal flip as the proposal outlines. This should be part of the training pipeline, not a one-time preprocessing step.
 
+--- CHECKPOINT ---
+Data pipeline is created successfully with validation set created. Implemented augmentation as well
+
 Step 5 — Build & Train Model 1 (Custom CNN Baseline)
 Build and train your scratch CNN first. Getting this working cleanly before touching transfer learning models will save you a lot of debugging pain later.
 
@@ -34,4 +37,4 @@ Tie everything together: methodology, results, and analysis. Your strongest cont
 
 
 CURRENT STEP-
-just finished steps 2 and 3. next thing to do is start with step 4 and build the validation set
+finished step 4. Now onto step 5
