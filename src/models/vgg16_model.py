@@ -13,7 +13,7 @@ from tensorflow.keras.applications.vgg16 import preprocess_input
 
 NUM_CLASSES = 43
 INPUT_SHAPE = (32, 32, 3)
-RESIZED_SHAPE = (64, 64)
+RESIZED_SHAPE = (128, 128)
 
 def build_vgg16_model(freeze_base=True):
     """
