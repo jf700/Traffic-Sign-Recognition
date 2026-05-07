@@ -25,7 +25,7 @@ def build_vgg16_model(freeze_base=True):
     """
 
     # input layer matches existing pipeline: 32x32 RGB in [0, 1]
-    inputs = layers.input(shape=INPUT_SHAPE)
+    inputs = layers.Input(shape=INPUT_SHAPE)
 
     # resize to 64x64
     x = layers.Resizing(*RESIZED_SHAPE)(inputs)
