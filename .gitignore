@@ -9,12 +9,11 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
+# Data (raw dataset, not in repo)
 data/
-*.csv
 *.zip
 
-# Trained model weights (note: not src/models/ which is source code)
+# Trained model weights (not src/models/ which is source code)
 *.h5
 *.keras
 /models/

@@ -1,0 +1,4 @@
+Model,Parameters,Epochs trained,Training time (min),Best val accuracy,Test accuracy,Test loss,Test errors,Val/test gap
+custom_cnn,294347,43,—,0.9987,0.9885,0.0533,145,0.0102
+vgg16,14736747,35,—,0.9986,0.9918,0.0447,103,0.0068
+resnet50,23675819,35,44.4,0.9932,0.9615,0.1509,486,0.0317
