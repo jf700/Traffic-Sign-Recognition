@@ -81,7 +81,7 @@ This project uses the **German Traffic Sign Recognition Benchmark (GTSRB)**:
 
 - **Training set**: 39,209 RGB images across 43 sign classes
 - **Test set**: 12,630 held-out images
-- **Source**: Originally published by [Ruhr-Universität Bochum](https://benchmark.ini.rub.de/gtsrb_news.html). Convenient redistribution available on [Kaggle](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign).
+- **Source**: Available on [Kaggle](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign).
 
 ### Download instructions
 
